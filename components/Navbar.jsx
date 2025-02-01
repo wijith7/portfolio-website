@@ -39,7 +39,8 @@ useEffect (()=>{
         </a>
 
         < ul className={`hidden md:flex item-center gap-6 lg:gap-8
-        rounded-full px-12 py-3 $ {isScroll ? "" : "bg-white shadow-sm bg-opacity-50"} `}>
+        rounded-full px-12 py-3 $ {isScroll ? "" : "bg-white shadow-sm 
+        bg-opacity-50"} `}>
             <li><a className='font-Ovo' href="#top">Home</a></li>
             <li><a className='font-Ovo' href="#about">About me</a></li>
             <li><a className='font-Ovo' href="#services">Services</a></li>
