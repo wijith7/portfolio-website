@@ -7,9 +7,16 @@ import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
+import jenkins from './jenkins.png';
 import figma from './figma.png';
+import intellij from './intellij.png';
+import node from './node.png';
 import git from './git.png';
+import azure from './azure.png';
+import excel from './excel.png';
+import jupyter from './jupyter.png';
 import mongodb from './mongodb.png';
+import mysql from './mysql.png'
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -47,8 +54,15 @@ export const assets = {
     vscode,
     firebase,
     figma,
+    intellij,
     git,
+    node,
+    jenkins,
     mongodb,
+    mysql,
+    excel,
+    azure,
+    jupyter,
     right_arrow_white,
     logo,
     logo_dark,
@@ -107,11 +121,11 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Java, ,Python, R, Shell, HTML, CSS, JavaScript React Js, Next Js' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Masters in Data Science, Bsc Special in Computer Science (Pure Mathematics, Applied Mathematics)' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Techinical Skills', description: 'Agile software development, Database Management, Data Science & Machine Learning' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.git, assets.intellij, assets.mysql, assets.node, assets.jupyter, assets.azure, assets.jenkins, assets.excel
 ];
