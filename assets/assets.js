@@ -114,10 +114,14 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Best Project Award - Finalist', description: 'Recognized among the top 3 finalists for my outstanding research project in Mathematics & Data Science at Flinders University.', 
+        link: '/achievements/best-project' },
+    { icon: assets.mobile_icon, title: 'Chancellor’s Letter of Commendation', description: 'Chancellor’s Letter of Commendation from Flinders University for outstanding academic performance.', 
+        link: '/achievements/chancellors-letter' },
+    { icon: assets.ui_icon, title: 'Golden Key International Honour Society invitation', description: 'Golden Key International Honour Society invitation , representing top 15% student in Flinders University', 
+        link: '/achievements/golden-key' },
+    { icon: assets.graphics_icon, title: 'Winner of Best Revenue Generating App Award', description: 'Recognized by Dialog Axiata in 2021 for creating the top-performing application in a competition driving exceptional revenue growth', 
+        link: '/achievements/app-award' },
 ]
 
 export const infoList = [

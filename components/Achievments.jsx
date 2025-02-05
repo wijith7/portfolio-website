@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
 
-const Services = () => {
+const Achievments = () => {
   return (
     <motion.div
 
@@ -20,7 +20,7 @@ const Services = () => {
       transition={{duration:0.3, delay:0.5}}
       
       
-      className='text-center mb-2 text-lg font-Ovo'>What I offer</motion.h4>
+      className='text-center mb-2 text-lg font-Ovo'>Proud Moments</motion.h4>
 
       <motion.h2
       
@@ -28,7 +28,7 @@ const Services = () => {
       whileInView={{y: 0, opacity: 1}}
       transition={{duration:0.5, delay:0.5}}
       
-      className='text-center text-5xl font-Ovo'>My Services</motion.h2>
+      className='text-center text-5xl font-Ovo'>My Achievments</motion.h2>
 
       <motion.p
       initial={{opacity: 0}}
@@ -36,8 +36,12 @@ const Services = () => {
       transition={{duration:0.5, delay:0.7}}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'
 
-      >Now transitioning into data analytics, data engineering, 
-        and AI engineering, combining software development expertise with data-driven insights.</motion.p>
+      >I am incredibly grateful for the journey I’ve taken and the support I’ve received along the way. 
+      These achievements are a reflection of hard work, continuous learning, and the encouragement from mentors, 
+      peers, and loved ones. I extend my sincere gratitude to everyone who has guided and inspired me throughout 
+      my career and academic journey.
+
+      Here are some milestones I’m proud to share:</motion.p>
 
         <motion.div
         
@@ -58,7 +62,7 @@ const Services = () => {
                 <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>
                     {description}
                 </p>
-                 <a href={link} className='flex items-center gap-2 text-sm mt-5'>
+                 <a href={link} target="_blank" className='flex items-center gap-2 text-sm mt-5 '>
                     Read more <Image src={assets.right_arrow} alt='' className='w-4' />
                  </a>
              </motion.div>
@@ -70,4 +74,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Achievments

@@ -34,7 +34,7 @@ const About = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className='flex w-full flex-col lg:flex-row items-center gap-10 lg:gap-20 my-12'
+        className='flex w-full flex-col lg:flex-row items-start gap-10 lg:gap-20 my-12'
       >
         {/* Image Section */}
         <motion.div
@@ -54,11 +54,14 @@ const About = ({ isDarkMode }) => {
           className='flex-1 text-center sm:text-left'
         >
           <p className='mb-10 max-w-full text-sm sm:text-base leading-relaxed font-Ovo text-justify'>
-            I am a Software Engineer with a strong foundation in Computer Science and a Master's degree in Data Science.
-            My expertise lies in designing and developing scalable software solutions, optimizing system performance, and
-            leveraging data-driven insights to drive innovation. With a passion for software engineering, data engineering,
-            and data analysis, I enjoy solving complex problems through efficient algorithms, cloud-based architectures, and advanced
-            data processing techniques.
+          I am a Software Engineer with a strong foundation in Computer Science and a Master's degree in Data Science. 
+          My expertise lies in designing and developing scalable software solutions, optimizing system performance, and 
+          leveraging data-driven insights to drive innovation.With a passion for software engineering, data engineering, 
+          and data analysis, I enjoy solving complex problems through efficient algorithms, cloud-based architectures, and 
+          advanced data processing techniques. My skill set includes backend development, database management, and data pipeline 
+          optimization, making me well-suited for roles that bridge the gap between software development and data-driven decision-making.
+          I am actively seeking opportunities in Software Engineering, Data Engineering, and Data Analysis, where I can apply my technical 
+          expertise to build robust applications, optimize workflows, and extract valuable insights from data to enhance business performance.
           </p>
 
           {/* Information Cards */}
