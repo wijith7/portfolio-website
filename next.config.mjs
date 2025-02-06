@@ -1,6 +1,9 @@
-// next.config.mjs
 export default {
-    output: 'export', // Tells Next.js to export the app as static files
-    trailingSlash: true, // Optional: Ensures URLs end with a slash, which is required for GitHub Pages
+    output: 'export',
+    basePath: '/portfolio-website',
+    assetPrefix: '/portfolio-website/',
+    trailingSlash: true, // Recommended for GitHub Pages
+    images: {
+      unoptimized: true, // Fix for Image Optimization error
+    },
   };
-  
