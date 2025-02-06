@@ -12,6 +12,10 @@ import figma from './figma.png';
 import intellij from './intellij.png';
 import node from './node.png';
 import git from './git.png';
+import letter from './letter.png';
+import revenue from './revenue.png';
+import golden from './golden.png';
+import research from './research.png';
 import azure from './azure.png';
 import excel from './excel.png';
 import jupyter from './jupyter.png';
@@ -55,6 +59,10 @@ export const assets = {
     firebase,
     figma,
     intellij,
+    research,
+    golden,
+    letter,
+    revenue,
     git,
     node,
     jenkins,
@@ -92,35 +100,39 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Masters Research',
+        description: 'Hospital Emergency Department Functionality',
         bgImage: '/work-1.png',
+        link: 'https://medium.com/@wijithpathiranage/a-finalist-for-the-best-research-award-my-journey-in-analyzing-emergency-department-functionality-dc56cc273272',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Power BI Project ',
+        description: 'Health-Care Data',
         bgImage: '/work-2.png',
+        link: '/achievements/best-project',
     },
     {
-        title: 'Photography site',
+        title: 'Azure Project',
         description: 'Web Design',
         bgImage: '/work-3.png',
+        link: '/achievements/best-project',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'startup business',
+        description: 'What I have learned form my startup business',
         bgImage: '/work-4.png',
+        link: '/achievements/best-project',
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Best Project Award - Finalist', description: 'Recognized among the top 3 finalists for my outstanding research project in Mathematics & Data Science at Flinders University.', 
+    { icon: assets.research, title: 'Best Project Award - Finalist', description: 'Recognized among the top 3 finalists for my outstanding research project in Mathematics & Data Science at Flinders University.', 
         link: '/achievements/best-project' },
-    { icon: assets.mobile_icon, title: 'Chancellor’s Letter of Commendation', description: 'Chancellor’s Letter of Commendation from Flinders University for outstanding academic performance.', 
+    { icon: assets.letter, title: 'Chancellor’s Letter of Commendation', description: 'Chancellor’s Letter of Commendation from Flinders University for outstanding academic performance.', 
         link: '/achievements/chancellors-letter' },
-    { icon: assets.ui_icon, title: 'Golden Key International Honour Society invitation', description: 'Golden Key International Honour Society invitation , representing top 15% student in Flinders University', 
+    { icon: assets.golden, title: 'Golden Key International Honour Society invitation', description: 'Golden Key International Honour Society invitation , representing top 15% student in Flinders University', 
         link: '/achievements/golden-key' },
-    { icon: assets.graphics_icon, title: 'Winner of Best Revenue Generating App Award', description: 'Recognized by Dialog Axiata in 2021 for creating the top-performing application in a competition driving exceptional revenue growth', 
+    { icon: assets.revenue, title: 'Winner of Best Revenue Generating App Award', description: 'Recognized by Dialog Axiata in 2021 for creating the top-performing application in a competition driving exceptional revenue growth', 
         link: '/achievements/app-award' },
 ]
 

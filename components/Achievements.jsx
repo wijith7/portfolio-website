@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
 
-const Achievments = () => {
+const Achievements = () => {
   return (
     <motion.div
 
@@ -11,7 +11,7 @@ const Achievments = () => {
     whileInView={{opacity:1}}
     transition={{duration:1}}
     
-    id="services" className='w-full px-[12%] py-10 scroll-mt-20'>
+    id="achievements" className='w-full px-[12%] py-10 scroll-mt-20'>
 
       <motion.h4
       
@@ -74,4 +74,4 @@ const Achievments = () => {
   )
 }
 
-export default Achievments
+export default Achievements

@@ -63,7 +63,11 @@ const Contact = () => {
       
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'
       >I'd love to hear from you! If you have any questions, comments, or feedback,
-      please use the form below</motion.p>
+      please use the form below <br /><br />
+      
+      <span style={{ color: "red" }}>Looking to hire?</span> I'm open to exciting job opportunities in <strong>Software Engineering, 
+      Data Engineering, and Data Analysis.</strong> If you think my skills align with your needs, 
+      let’s connect and discuss how I can contribute to your team!</motion.p>
 
     <motion.form
     
