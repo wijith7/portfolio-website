@@ -41,7 +41,7 @@ const About = ({ isDarkMode }) => {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className='w-48 sm:w-64 lg:w-80 rounded-3xl'
+          className='flex justify-center w-48 sm:w-64 lg:w-80 mx-auto rounded-3xl'
         >
           <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
         </motion.div>
