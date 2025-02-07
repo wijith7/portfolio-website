@@ -102,25 +102,25 @@ export const workData = [
     {
         title: 'Masters Research',
         description: 'Hospital Emergency Department Functionality',
-        bgImage: '/work-1.png',
+        bgImage: './work-1.png',
         link: 'https://medium.com/@wijithpathiranage/a-finalist-for-the-best-research-award-my-journey-in-analyzing-emergency-department-functionality-dc56cc273272',
     },
     {
         title: 'Power BI Project ',
         description: 'Health-Care Data',
-        bgImage: '/work-2.png',
+        bgImage: './work-2.png',
         link: '/achievements/best-project',
     },
     {
         title: 'Azure Project',
         description: 'Web Design',
-        bgImage: '/work-3.png',
+        bgImage: './work-3.png',
         link: '/achievements/best-project',
     },
     {
         title: 'startup business',
         description: 'What I have learned form my startup business',
-        bgImage: '/work-4.png',
+        bgImage: './work-4.png',
         link: '/achievements/best-project',
     },
 ]
