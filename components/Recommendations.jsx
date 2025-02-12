@@ -52,11 +52,11 @@ const Recommendations = () => {
         initial={{ opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className="my-10 w-screen h-screen"
+        className="my-10 w-screen h-auto"
       >
         <Swiper 
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={30}
+          spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 1 },
@@ -74,7 +74,7 @@ const Recommendations = () => {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="border border-gray-400 rounded-lg px-8 py-10 hover:shadow-black cursor-pointer 
-                           hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white w-full max-w-[400px] md:max-w-[1000px] lg:max-w-[1000px]"
+                           hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px]"
               >
                 <div className="flex items-center gap-4">
                   <Image src={project.image} alt="" width={50} height={50} className="rounded-full" />
