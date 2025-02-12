@@ -127,9 +127,9 @@ export const workData = [
 
 export const serviceData = [
     { icon: assets.research, title: 'Best Project Award - Finalist', description: 'Recognized among the top 3 finalists for my outstanding research project in Mathematics & Data Science at Flinders University.', 
-        link: '/achievements/best-project' },
+        link: 'https://medium.com/@wijithpathiranage/becoming-a-top-3-finalist-in-my-masters-research-project-a-journey-of-growth-and-excellence-06928829deae' },
     { icon: assets.letter, title: 'Chancellor’s Letter of Commendation', description: 'Chancellor’s Letter of Commendation from Flinders University for outstanding academic performance.', 
-        link: '/achievements/chancellors-letter' },
+        link: 'https://medium.com/@wijithpathiranage/recognized-for-excellence-vice-chancellors-commendation-for-outstanding-performance-5527ac2d1acb' },
     { icon: assets.golden, title: 'Golden Key International Honour Society invitation', description: 'Golden Key International Honour Society invitation , representing top 15% student in Flinders University', 
         link: '/achievements/golden-key' },
     { icon: assets.revenue, title: 'Winner of Best Revenue Generating App Award', description: 'Recognized by Dialog Axiata in 2021 for creating the top-performing application in a competition driving exceptional revenue growth', 
