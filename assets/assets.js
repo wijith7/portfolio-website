@@ -136,6 +136,22 @@ export const serviceData = [
         link: '/achievements/app-award' },
 ]
 
+export const recoData = [
+    {
+      name: "Dr.Mariusz Bajger, Msc, PhD",
+      title: "Lecturer, College of Science and Engineering , Flinders University ",
+      image: "/mariusz_img.png",
+      feedback: "I had a pleasure to supervise Wijith's Master Project in Data Science. Wijith was hard-working and highly committed to his project. He showed a good grasp of difficult research literature, demonstrated solid programming skills, analytical thinking and reasoning, creativity and motivation. Wijith was willing to learn and grow while being self-disciplined and well-organised. I highly recommend Wijith to employers.",
+    },
+    {
+      name: "Sriskandarajah Suhothayan",
+      title: "Senior Software Engineer at Amazon | Author Design Patterns for Cloud Native Applications | Founder open-source stream processing engine Siddhi | Ex-WSO2",
+      image: "/suho.png",
+      feedback: "I had the pleasure of working with Wijith at WSO2, where I served as his supervisor, and I can confidently say he is one of the most motivated and eager-to-learn individuals I have encountered. His contributions were invaluable, particularly in the Docs as Code framework project for Siddhi.io. Wijith took on the challenge of creating a product documentation webpage directly from code annotations, bringing a streamlined and highly maintainable approach to our documentation process. His exceptional work on this project highlighted his innovative thinking, attention to detail, and commitment to excellence. His enthusiasm for learning and growth, combined with his technical skills, make him an asset to any team. I highly recommend him and look forward to seeing his future successes.",
+    },
+    
+  ];
+
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Java, ,Python, R, Shell, HTML, CSS, JavaScript React Js, Next Js' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Masters in Data Science, Bsc Special in Computer Science (Pure Mathematics, Applied Mathematics)' },
