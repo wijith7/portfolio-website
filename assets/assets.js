@@ -131,7 +131,7 @@ export const serviceData = [
     { icon: assets.letter, title: 'Chancellor’s Letter of Commendation', description: 'Chancellor’s Letter of Commendation from Flinders University for outstanding academic performance.', 
         link: 'https://medium.com/@wijithpathiranage/recognized-for-excellence-vice-chancellors-commendation-for-outstanding-performance-5527ac2d1acb' },
     { icon: assets.golden, title: 'Golden Key International Honour Society invitation', description: 'Golden Key International Honour Society invitation , representing top 15% student in Flinders University', 
-        link: '/achievements/golden-key' },
+        link: 'https://medium.com/@wijithpathiranage/657fc840993b' },
     { icon: assets.revenue, title: 'Winner of Best Revenue Generating App Award', description: 'Recognized by Dialog Axiata in 2021 for creating the top-performing application in a competition driving exceptional revenue growth', 
         link: '/achievements/app-award' },
 ]
