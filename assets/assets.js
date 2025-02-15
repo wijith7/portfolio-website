@@ -109,7 +109,7 @@ export const workData = [
         title: 'Power BI Project ',
         description: 'Health-Care Data',
         bgImage: './work-2.png',
-        link: '/achievements/best-project',
+        link: 'https://medium.com/@wijithpathiranage/healthcare-dashboard-project-power-bi-e9bd5d9af71f',
     },
     {
         title: 'Azure Project',
