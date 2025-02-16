@@ -118,10 +118,10 @@ export const workData = [
         link: '/achievements/best-project',
     },
     {
-        title: 'startup business',
-        description: 'What I have learned form my startup business',
+        title: 'Why Data Science',
+        description: 'A Journey of Curiosity, Discovery, and Growth',
         bgImage: './work-4.png',
-        link: '/achievements/best-project',
+        link: 'https://medium.com/@wijithpathiranage/why-i-chose-to-pursue-a-masters-in-data-science-a-journey-of-curiosity-discovery-and-growth-b72903170f97',
     },
 ]
 
