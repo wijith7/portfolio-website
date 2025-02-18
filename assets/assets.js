@@ -112,10 +112,10 @@ export const workData = [
         link: 'https://medium.com/@wijithpathiranage/healthcare-dashboard-project-power-bi-e9bd5d9af71f',
     },
     {
-        title: 'Azure Project',
-        description: 'Web Design',
+        title: 'Arduino Projects',
+        description: 'The Spark',
         bgImage: './work-3.png',
-        link: '/achievements/best-project',
+        link: 'https://medium.com/@wijithpathiranage/how-arduino-sparked-my-passion-for-engineering-and-problem-solving-c445e12a0182',
     },
     {
         title: 'Why Data Science',
@@ -133,7 +133,7 @@ export const serviceData = [
     { icon: assets.golden, title: 'Golden Key International Honour Society invitation', description: 'Golden Key International Honour Society invitation , representing top 15% student in Flinders University', 
         link: 'https://medium.com/@wijithpathiranage/657fc840993b' },
     { icon: assets.revenue, title: 'Winner of Best Revenue Generating App Award', description: 'Recognized by Dialog Axiata in 2021 for creating the top-performing application in a competition driving exceptional revenue growth', 
-        link: '/achievements/app-award' },
+        link: 'https://medium.com/@wijithpathiranage/from-vision-to-victory-leading-my-team-to-create-the-best-revenue-generating-app-8de6879686a1' },
 ]
 
 export const recoData = [
