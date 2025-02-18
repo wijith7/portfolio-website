@@ -6,7 +6,7 @@ import { spring } from 'motion'
 
 const Header = () => {
   return (
-    <div className=' w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-1 pt-20'>
+    <div className=' w-11/12 max-w-3xl text-center mx-auto h-auto flex flex-col items-center justify-center gap-1 pt-20'>
         <motion.div
         initial={{scale:0}}
         whileInView={{scale:1}}
