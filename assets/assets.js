@@ -153,9 +153,9 @@ export const recoData = [
   ];
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Java, ,Python, R, Shell, HTML, CSS, JavaScript React Js, Next Js' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Java, Python, C++, R, Shell, HTML, CSS, JavaScript, React Js, Next Js' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Masters in Data Science, Bsc Special in Computer Science (Pure Mathematics, Applied Mathematics)' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Techinical Skills', description: 'Agile software development, Database Management, Data Science & Machine Learning' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Techinical Skills', description: 'Agile software development, Database Management, Data Science, Front-End Development, Back-End Development, Data Engineering, Data Analysis ' }
 ];
 
 export const toolsData = [
