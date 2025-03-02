@@ -112,10 +112,22 @@ export const workData = [
         link: 'https://medium.com/@wijithpathiranage/healthcare-dashboard-project-power-bi-e9bd5d9af71f',
     },
     {
+        title: 'Data Engineer Project',
+        description: 'Real-Time Data Streaming',
+        bgImage: './work-5.png',
+        link: 'https://medium.com/@wijithpathiranage/real-time-data-streaming-project-3b9d89a1a0ce',
+    },
+    {
         title: 'Arduino Projects',
         description: 'The Spark',
         bgImage: './work-3.png',
         link: 'https://medium.com/@wijithpathiranage/how-arduino-sparked-my-passion-for-engineering-and-problem-solving-c445e12a0182',
+    },
+    {
+        title: 'My Bachelor’s Thesis',
+        description: 'CS with Opportunistic Networks ',
+        bgImage: './work-6.png',
+        link: 'https://medium.com/@wijithpathiranage/revolutionizing-content-sharing-with-opportunistic-networks-and-bittorrent-my-bachelors-thesis-4188bb09b7bf',
     },
     {
         title: 'Why Data Science',
