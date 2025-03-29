@@ -39,7 +39,7 @@ const Header = () => {
         transition={{duration:0.6, delay:0.7}}
         
         className='max-w-2xl mx-auto font-Ovo'>
-        I am an software engineer with five years of experience, currently expanding my expertise in data science, 
+        I am an software engineer with four years of experience, currently expanding my expertise in data science, 
         data engineering, and data analysis. Based in Australia, I am passionate about leveraging technology and 
         data to solve complex problems and data drive innovation.  
         </motion.p>
