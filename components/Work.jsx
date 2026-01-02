@@ -1,15 +1,25 @@
 import { assets, workData } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from "motion/react"
 
 const Work = ({isDarkMode}) => {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  // Get unique categories
+  const categories = ['All', ...new Set(workData.map(item => item.category))];
+
+  // Filter projects based on selected category
+  const filteredProjects = selectedCategory === 'All'
+    ? workData
+    : workData.filter(project => project.category === selectedCategory);
+
   return (
     <motion.div
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration:1}}
-    
+
     id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
 
       <motion.h4
@@ -33,10 +43,30 @@ const Work = ({isDarkMode}) => {
       
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'
       >Throughout my journey as a Software Engineer and Data Scientist, I have worked on a variety of projects
-       that reflect my passion for technology, problem-solving, and innovation. From academic research to client-driven solutions, 
-       each project has been an opportunity to apply my skills, explore new technologies, and deliver impactful results.Each project 
+       that reflect my passion for technology, problem-solving, and innovation. From academic research to client-driven solutions,
+       each project has been an opportunity to apply my skills, explore new technologies, and deliver impactful results.Each project
        represents a step forward in my continuous learning and professional growth, and I am excited to share these with you.</motion.p>
 
+      {/* Category Filter Buttons */}
+      <motion.div
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{duration:0.6, delay:0.7}}
+      className='flex flex-wrap justify-center gap-3 mb-8'>
+        {categories.map((category, index) => (
+          <button
+            key={index}
+            onClick={() => setSelectedCategory(category)}
+            className={`px-6 py-2 rounded-full font-Ovo transition-all duration-300 ${
+              selectedCategory === category
+                ? 'bg-black text-white dark:bg-white dark:text-black'
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-darkHover dark:text-white dark:hover:bg-darkHover/70'
+            }`}
+          >
+            {category}
+          </button>
+        ))}
+      </motion.div>
 
       <motion.div
       
@@ -44,33 +74,56 @@ const Work = ({isDarkMode}) => {
       whileInView={{opacity: 1}}
       transition={{duration:0.6, delay:0.9}}
       
-      className='grid grid-cols-auto my-10 gap-5 dark:text-black '>
-        {workData.map ((project,index)=>(
+      className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10'>
+        {filteredProjects.map ((project,index)=>(
 
-            <motion.div
+            <motion.a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
             
-           whileHover={{scale: 1.05}}
+           whileHover={{scale: 1.02, y: -4}}
            transition={{duration: 0.3}}
             
             key={index}
-            className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg 
-            relative cursor-pointer group'
-            style={{backgroundImage: `url(${project.bgImage})`}}>
-                <div className='bg-white w-10/12 rounded-md absolute bottom-5
-                left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
-                    <div>
-                        <h2 className='font-semibold'>{project.title}</h2>
-                        <p className='text-sm text-gray-700'>{project.description}</p>
-                    </div>
-                    <a href={project.link} target="_blank" className='border rounded-full border-black w-9 
-                    aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300
-                    transition'>
-                        <Image src={assets.send_icon} alt='send icon' className='w-5'/>
-                    </a>
-                </div>    
-               
+            className='border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover 
+            hover:shadow-lg duration-500 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 
+            flex flex-col group'>
+                
+                {/* Thumbnail Image */}
+                <div className='w-full h-48 mb-4 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800'>
+                    <img 
+                        src={project.bgImage} 
+                        alt={project.title}
+                        className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500'
+                    />
+                </div>
 
-            </motion.div>
+                {/* Content */}
+                <div className='flex-1 flex flex-col'>
+                    {project.category && (
+                        <span className='inline-block w-fit px-3 py-1 text-xs font-semibold rounded-full bg-lime-200 text-gray-800 mb-3'>
+                            {project.category}
+                        </span>
+                    )}
+                    
+                    <h2 className='font-semibold text-lg text-gray-800 dark:text-white mb-2 line-clamp-2 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-colors'>
+                        {project.title}
+                    </h2>
+                    
+                    <p className='text-sm text-gray-600 dark:text-gray-300 mb-4 line-clamp-2 flex-1'>
+                        {project.description}
+                    </p>
+                    
+                    {project.readTime && (
+                        <div className='flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400 mt-auto pt-2 border-t border-gray-200 dark:border-gray-700'>
+                            <span>⏱️</span>
+                            <span>{project.readTime} read</span>
+                        </div>
+                    )}
+                </div>    
+
+            </motion.a>
         ))}
       </motion.div>
 

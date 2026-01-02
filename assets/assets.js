@@ -99,41 +99,107 @@ export const assets = {
 };
 
 export const workData = [
+    // Latest Industry Articles
+    {
+        title: "You Can't See the Danger Inside a Tailings Dam — Engineers Use This to Find It",
+        description: "How engineers detect hidden dangers in tailings dams",
+        bgImage: '/You Can not see.png',
+        link: 'https://medium.com/@wijithpathiranage/you-cant-see-the-danger-inside-a-tailings-dam-engineers-use-this-to-find-it-9092bb53e202',
+        readTime: '6 min',
+        category: 'Industry Experience',
+        tags: ['Tailings Dams', 'Engineering', 'Monitoring', 'Safety'],
+        date: '2025-12-01'
+    },
+    {
+        title: "What SCADA Systems Really Do",
+        description: "Understanding SCADA systems in industrial applications",
+        bgImage: '/Behind the Curtain of Industry What SCADA Systems Really Do.png',
+        link: 'https://medium.com/@wijithpathiranage/behind-the-curtain-of-industry-what-scada-systems-really-do-86ea641899a8',
+        readTime: '5 min',
+        category: 'Industry Experience',
+        tags: ['SCADA', 'Industry', 'Automation'],
+        date: '2024-12-01'
+    },
+    {
+        title: "There's More Than Just Water Dams:",
+        description: "Exploring tailing dams in mining operations",
+        bgImage: '/More Than Just Water Dams A Look at Tailing Dams.png',
+        link: 'https://medium.com/@wijithpathiranage/theres-more-than-just-water-dams-a-look-at-tailing-dams-2a5c4efba985',
+        readTime: '5 min',
+        category: 'Industry Experience',
+        tags: ['Mining', 'Dams', 'Engineering'],
+        date: '2024-11-15'
+    },
+    {
+        title: "GNSS Technology - Tailings Dam Monitoring",
+        description: "GNSS technology applications in dam monitoring",
+        bgImage: '/How GNSS Technology is Revolutionizing Tailings Dam Monitoring.png',
+        link: 'https://medium.com/@wijithpathiranage/how-gnss-technology-is-revolutionizing-tailings-dam-monitoring-9916aea8f804',
+        readTime: '6 min',
+        category: 'Data Engineering',
+        tags: ['GNSS', 'Monitoring', 'IoT', 'Data'],
+        date: '2024-10-20'
+    },
+    // Academic & Past Projects
     {
         title: 'Masters Research',
         description: 'Hospital Emergency Department Functionality',
-        bgImage: './work-1.png',
+        bgImage: '/work-7.png',
         link: 'https://medium.com/@wijithpathiranage/a-finalist-for-the-best-research-award-my-journey-in-analyzing-emergency-department-functionality-dc56cc273272',
+        readTime: '6 min',
+        category: 'Academic',
+        tags: ['Data Science', 'Research', 'Healthcare'],
+        date: '2024-06-01'
     },
     {
-        title: 'Power BI Project ',
+        title: 'Power BI Project',
         description: 'Health-Care Data',
-        bgImage: './work-2.png',
+        bgImage: '/work-8.png',
         link: 'https://medium.com/@wijithpathiranage/healthcare-dashboard-project-power-bi-e9bd5d9af71f',
+        readTime: '4 min',
+        category: 'Data Analysis',
+        tags: ['Power BI', 'Healthcare', 'Visualization'],
+        date: '2024-05-15'
     },
     {
         title: 'Data Engineer Project',
         description: 'Real-Time Data Streaming',
-        bgImage: './work-5.png',
+        bgImage: '/Real-Time Data Streaming Project.png',
         link: 'https://medium.com/@wijithpathiranage/real-time-data-streaming-project-3b9d89a1a0ce',
+        readTime: '5 min',
+        category: 'Data Engineering',
+        tags: ['Streaming', 'Real-time', 'Apache Kafka'],
+        date: '2024-04-10'
     },
     {
         title: 'Arduino Projects',
         description: 'The Spark',
-        bgImage: './work-3.png',
+        bgImage: '/work-3.png',
         link: 'https://medium.com/@wijithpathiranage/how-arduino-sparked-my-passion-for-engineering-and-problem-solving-c445e12a0182',
+        readTime: '7 min',
+        category: 'Software Engineering',
+        tags: ['Arduino', 'IoT', 'Embedded Systems'],
+        date: '2023-12-20'
     },
     {
-        title: 'My Bachelor’s Thesis',
-        description: 'CS with Opportunistic Networks ',
-        bgImage: './work-6.png',
+        title: "My Bachelor's Thesis",
+        description: 'CS with Opportunistic Networks',
+        bgImage: '/work-6.png',
         link: 'https://medium.com/@wijithpathiranage/revolutionizing-content-sharing-with-opportunistic-networks-and-bittorrent-my-bachelors-thesis-4188bb09b7bf',
+        readTime: '8 min',
+        category: 'Academic',
+        tags: ['Networking', 'Research', 'BitTorrent'],
+        date: '2023-10-05'
     },
     {
         title: 'Why Data Science',
         description: 'A Journey of Curiosity, Discovery, and Growth',
-        bgImage: './work-4.png',
+        bgImage: '/work-4.png',
         link: 'https://medium.com/@wijithpathiranage/why-i-chose-to-pursue-a-masters-in-data-science-a-journey-of-curiosity-discovery-and-growth-b72903170f97',
+        readTime: '5 min',
+        category: 'Academic',
+        tags: ['Data Science', 'Career', 'Education'],
+        date: '2023-08-15'
     },
 ]
 
