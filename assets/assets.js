@@ -144,7 +144,7 @@ export const workData = [
     {
         title: 'Masters Research',
         description: 'Hospital Emergency Department Functionality',
-        bgImage: '/work-7.png',
+        bgImage: '/Masters Research.png',
         link: 'https://medium.com/@wijithpathiranage/a-finalist-for-the-best-research-award-my-journey-in-analyzing-emergency-department-functionality-dc56cc273272',
         readTime: '6 min',
         category: 'Academic',
@@ -154,7 +154,7 @@ export const workData = [
     {
         title: 'Power BI Project',
         description: 'Health-Care Data',
-        bgImage: '/work-8.png',
+        bgImage: '/Power BI project.png',
         link: 'https://medium.com/@wijithpathiranage/healthcare-dashboard-project-power-bi-e9bd5d9af71f',
         readTime: '4 min',
         category: 'Data Analysis',
