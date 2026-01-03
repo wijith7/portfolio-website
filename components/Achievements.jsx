@@ -1,9 +1,19 @@
 import { assets, serviceData } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from "motion/react"
+import { AchievementSkeleton } from './SkeletonLoader'
 
 const Achievements = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <motion.div
 
@@ -49,7 +59,13 @@ const Achievements = () => {
         whileInView={{y: 0, opacity: 1}}
         transition={{duration:0.6, delay:0.9}}
         className='grid grid-cols-auto gap-6 my-10'>
-            {serviceData.map(({icon,title,description,link}, index)=>(
+            {isLoading ? (
+              // Show skeleton loaders while loading
+              Array.from({ length: 4 }).map((_, index) => (
+                <AchievementSkeleton key={index} />
+              ))
+            ) : (
+              serviceData.map(({icon,title,description,link}, index)=>(
 
              <motion.div
              whileFocus={{scale:1.05}}
@@ -67,7 +83,8 @@ const Achievements = () => {
                  </a>
              </motion.div>
 
-            ))}
+              ))
+            )}
 
         </motion.div>
     </motion.div>

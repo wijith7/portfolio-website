@@ -1,11 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from "motion/react"
-import { certificationsData } from '@/assets/assets'
+import { certificationsData, assets } from '@/assets/assets'
 import Image from 'next/image'
+import { CertificationSkeleton } from './SkeletonLoader'
 
 const Certifications = ({ isDarkMode }) => {
   const [selectedCert, setSelectedCert] = useState(null);
   const [isPaused, setIsPaused] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const scrollContainerRef = useRef(null);
 
   const openModal = (cert) => {
@@ -17,6 +19,36 @@ const Certifications = ({ isDarkMode }) => {
     setSelectedCert(null);
     document.body.style.overflow = 'unset';
   };
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: -320, // Scroll by card width (w-80 = 320px) plus gap
+        behavior: 'smooth'
+      });
+      setIsPaused(true);
+      setTimeout(() => setIsPaused(false), 1000);
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: 320, // Scroll by card width (w-80 = 320px) plus gap
+        behavior: 'smooth'
+      });
+      setIsPaused(true);
+      setTimeout(() => setIsPaused(false), 1000);
+    }
+  };
+
+  // Loading state
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, []);
 
   // Auto-scroll functionality
   useEffect(() => {
@@ -85,16 +117,54 @@ const Certifications = ({ isDarkMode }) => {
         transition={{duration: 0.6, delay: 0.9}}
         className='relative my-10'
       >
+        {/* Left Arrow Button */}
+        <button
+          onClick={scrollLeft}
+          className='absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-darkTheme border border-gray-400 dark:border-white rounded-full p-3 shadow-lg hover:bg-lightHover dark:hover:bg-darkHover transition-colors duration-300 -translate-x-4 md:-translate-x-8'
+          aria-label='Scroll left'
+        >
+          <svg 
+            className='w-6 h-6 text-gray-800 dark:text-white' 
+            fill='none' 
+            stroke='currentColor' 
+            viewBox='0 0 24 24'
+          >
+            <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M15 19l-7-7 7-7' />
+          </svg>
+        </button>
+
+        {/* Right Arrow Button */}
+        <button
+          onClick={scrollRight}
+          className='absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-darkTheme border border-gray-400 dark:border-white rounded-full p-3 shadow-lg hover:bg-lightHover dark:hover:bg-darkHover transition-colors duration-300 translate-x-4 md:translate-x-8'
+          aria-label='Scroll right'
+        >
+          <svg 
+            className='w-6 h-6 text-gray-800 dark:text-white' 
+            fill='none' 
+            stroke='currentColor' 
+            viewBox='0 0 24 24'
+          >
+            <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M9 5l7 7-7 7' />
+          </svg>
+        </button>
+
         {/* Horizontal Scrolling Container */}
         <div
           ref={scrollContainerRef}
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
-          className='flex gap-6 overflow-x-auto scrollbar-hide pb-4 cursor-grab active:cursor-grabbing'
+          className='flex gap-6 overflow-x-auto scrollbar-hide pb-4 px-2'
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
-          {/* Duplicate items for seamless infinite scroll */}
-          {[...certificationsData, ...certificationsData].map((cert, index) => (
+          {isLoading ? (
+            // Show skeleton loaders while loading
+            Array.from({ length: 3 }).map((_, index) => (
+              <CertificationSkeleton key={index} />
+            ))
+          ) : (
+            /* Duplicate items for seamless infinite scroll */
+            [...certificationsData, ...certificationsData].map((cert, index) => (
             <motion.div
               whileHover={{scale: 1.05, y: -4}}
               transition={{duration: 0.3}}
@@ -138,7 +208,8 @@ const Certifications = ({ isDarkMode }) => {
                 </span>
               </div>
             </motion.div>
-          ))}
+            ))
+          )}
         </div>
       </motion.div>
 

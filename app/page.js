@@ -36,16 +36,16 @@ useEffect (()=>{
 },[isDarkMode])
 
   return (
-    <>  
-    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-    <Header isDarkMode={isDarkMode}/>
-    <About isDarkMode={isDarkMode}/>
-    <Achievements isDarkMode={isDarkMode}/>
-    <Work isDarkMode={isDarkMode}/>
-    <Certifications isDarkMode={isDarkMode}/>
-    <Recommendations isDarkMode={isDarkMode}/>
-    <Contact isDarkMode={isDarkMode}/>
-    <Footer isDarkMode={isDarkMode}/>
+    <>
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+      <Header isDarkMode={isDarkMode}/>
+      <About isDarkMode={isDarkMode}/>
+      <Achievements isDarkMode={isDarkMode}/>
+      <Work isDarkMode={isDarkMode}/>
+      <Certifications isDarkMode={isDarkMode}/>
+      <Recommendations isDarkMode={isDarkMode}/>
+      <Contact isDarkMode={isDarkMode}/>
+      <Footer isDarkMode={isDarkMode}/>
     </>
   );
 }

@@ -1,10 +1,12 @@
 import { assets, workData } from '@/assets/assets'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from "motion/react"
+import { CardSkeleton } from './SkeletonLoader'
 
 const Work = ({isDarkMode}) => {
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [isLoading, setIsLoading] = useState(true);
 
   // Get unique categories
   const categories = ['All', ...new Set(workData.map(item => item.category))];
@@ -13,6 +15,14 @@ const Work = ({isDarkMode}) => {
   const filteredProjects = selectedCategory === 'All'
     ? workData
     : workData.filter(project => project.category === selectedCategory);
+
+  // Simulate loading for images
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [selectedCategory]);
 
   return (
     <motion.div
@@ -75,7 +85,13 @@ const Work = ({isDarkMode}) => {
       transition={{duration:0.6, delay:0.9}}
       
       className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10'>
-        {filteredProjects.map ((project,index)=>(
+        {isLoading ? (
+          // Show skeleton loaders while loading
+          Array.from({ length: 6 }).map((_, index) => (
+            <CardSkeleton key={index} />
+          ))
+        ) : (
+          filteredProjects.map ((project,index)=>(
 
             <motion.a
             href={project.link}
@@ -124,7 +140,8 @@ const Work = ({isDarkMode}) => {
                 </div>    
 
             </motion.a>
-        ))}
+          ))
+        )}
       </motion.div>
 
       <motion.a

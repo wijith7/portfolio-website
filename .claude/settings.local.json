@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(if [ -d \"node_modules\" ])",
+      "Bash(then echo \"Dependencies already installed\")",
+      "Bash(else echo \"Need to install dependencies\")",
+      "Bash(fi)",
+      "Bash(npm run dev:*)",
+      "WebFetch(domain:medium.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
