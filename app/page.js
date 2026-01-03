@@ -8,6 +8,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import Recommendations from "@/components/Recommendations";
+import Certifications from "@/components/Certifications";
 
 export default function Home() {
 
@@ -41,6 +42,7 @@ useEffect (()=>{
     <About isDarkMode={isDarkMode}/>
     <Achievements isDarkMode={isDarkMode}/>
     <Work isDarkMode={isDarkMode}/>
+    <Certifications isDarkMode={isDarkMode}/>
     <Recommendations isDarkMode={isDarkMode}/>
     <Contact isDarkMode={isDarkMode}/>
     <Footer isDarkMode={isDarkMode}/>

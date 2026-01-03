@@ -44,6 +44,7 @@ useEffect (()=>{
             <li><a className='font-Ovo' href="#about">About me</a></li>
             <li><a className='font-Ovo' href="#achievements">Achievements</a></li>
             <li><a className='font-Ovo' href="#work">My work</a></li>
+            <li><a className='font-Ovo' href="#certifications">Certifications</a></li>
             <li><a className='font-Ovo' href="#contact">Contact me</a></li>
         </ul>
 
@@ -76,6 +77,7 @@ useEffect (()=>{
                  <li><a className='font-Ovo' onClick={closeMenu} href="#about">About me</a></li>
                  <li><a className='font-Ovo' onClick={closeMenu} href="#achievements">Achievements</a></li>
                  <li><a className='font-Ovo' onClick={closeMenu} href="#work">My work</a></li>
+                 <li><a className='font-Ovo' onClick={closeMenu} href="#certifications">Certifications</a></li>
                  <li><a className='font-Ovo' onClick={closeMenu} href="#contact">Contact me</a></li>
               </ul>
       </nav>

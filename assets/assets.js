@@ -239,3 +239,66 @@ export const infoList = [
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.git, assets.intellij, assets.mysql, assets.node, assets.jupyter, assets.azure, assets.jenkins, assets.excel
 ];
+
+export const certificationsData = [
+    // Academic Degrees
+    {
+        title: 'Master of Data Science',
+        issuer: 'Flinders University',
+        date: '2023-2024',
+        credentialUrl: '#',
+        badgeImage: '/Master of Data Science .png',
+        description: 'Master\'s degree in Data Science with focus on advanced analytics, machine learning, and data engineering'
+    },
+    {
+        title: 'Bachelor of Science (BSc) - Mathematics & Computer Science',
+        issuer: 'University',
+        date: '2018-2021',
+        credentialUrl: '#',
+        badgeImage: '/Bachelor of Science (BSc) Degree Certificate Mathematics & Computer Science  .jpg',
+        description: 'Bachelor\'s degree specializing in Pure Mathematics, Applied Mathematics, and Computer Science'
+    },
+    // University Recognition
+    {
+        title: 'Chancellor\'s Letter of Commendation',
+        issuer: 'Flinders University',
+        date: '2024',
+        credentialUrl: 'https://medium.com/@wijithpathiranage/recognized-for-excellence-vice-chancellors-commendation-for-outstanding-performance-5527ac2d1acb',
+        badgeImage: '/Flinders University Chancellor\'s Letter Of Commendation.png',
+        description: 'Recognized for outstanding academic performance and excellence at Flinders University'
+    },
+    // Professional Certifications
+    {
+        title: 'Google Data Analytics Professional Certificate',
+        issuer: 'Google',
+        date: '2024',
+        credentialUrl: '#',
+        badgeImage: '/Google Data Analytics.png',
+        description: 'Professional certification in data analytics covering data cleaning, analysis, visualization, and R programming'
+    },
+    {
+        title: 'Advanced Certificate in Human Resource Management',
+        issuer: 'Professional Training Institution',
+        date: '2023',
+        credentialUrl: '#',
+        badgeImage: '/Advanced Certificate HUmen Resource Management.png',
+        description: 'Advanced certification in human resource management practices and principles'
+    },
+    {
+        title: 'Fundamentals of Digital Marketing',
+        issuer: 'Google Digital Garage',
+        date: '2023',
+        credentialUrl: '#',
+        badgeImage: '/The fundamental of digital Marketing certificate.png',
+        description: 'Comprehensive certification covering digital marketing fundamentals including SEO, SEM, social media, and analytics'
+    },
+    // Awards & Competitions
+    {
+        title: 'Photography Competition - 1st Place',
+        issuer: 'Competition Organizer',
+        date: '2022',
+        credentialUrl: '#',
+        badgeImage: '/Photograph Competition I st place.png',
+        description: 'Achieved first place in photography competition, demonstrating creative and technical skills'
+    }
+];
