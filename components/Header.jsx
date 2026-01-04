@@ -51,7 +51,7 @@ const Header = () => {
         transition={{duration:0.8, delay:0.5}}
         
         className= 'text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-            software engineer with a growing expertise in data engineering and data analysis.
+            Data Engineer with experience in software engineering and data analysis.
         </motion.h1>
 
         <motion.p
@@ -60,9 +60,10 @@ const Header = () => {
         transition={{duration:0.6, delay:0.7}}
         
         className='max-w-2xl mx-auto font-Ovo'>
-        I am an software engineer with four years of experience, currently expanding my expertise in data science, 
-        data engineering, and data analysis. Based in Australia, I am passionate about leveraging technology and 
-        data to solve complex problems and data drive innovation.  
+        I am a Data Engineer with experience in software engineering and data analysis. With a strong foundation in 
+        both fields, I bring a unique perspective to building scalable data solutions and robust software systems. 
+        Based in Australia, I am passionate about leveraging technology and data to solve complex problems and 
+        drive innovation.
         </motion.p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
