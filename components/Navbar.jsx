@@ -41,12 +41,29 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8
         rounded-full px-12 py-3 ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark: border dark:border-white/50 dark:bg-transparent"} `}>
           <li><a className='font-Ovo' href="#top">Home</a></li>
-          <li><a className='font-Ovo' href="#about">About me</a></li>
-          <li><a className='font-Ovo' href="#experience">Experience</a></li>
-          <li><a className='font-Ovo' href="#achievements">Achievements</a></li>
-          <li><a className='font-Ovo' href="#work">My work</a></li>
-          <li><a className='font-Ovo' href="#certifications">Certifications</a></li>
-          <li><a className='font-Ovo' href="#gallery">Gallery</a></li>
+
+          <li className='relative group'>
+            <span className='font-Ovo cursor-pointer'>About</span>
+            <ul className='absolute left-0 top-full pt-2 hidden group-hover:block transition-all duration-300 w-48'>
+              <div className='bg-white dark:bg-darkHover shadow-lg rounded-lg py-2 border dark:border-white/10'>
+                <li><a className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-darkTheme font-Ovo' href="#about">About me</a></li>
+                <li><a className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-darkTheme font-Ovo' href="#experience">Experience</a></li>
+                <li><a className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-darkTheme font-Ovo' href="#achievements">Achievements</a></li>
+                <li><a className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-darkTheme font-Ovo' href="#certifications">Certifications</a></li>
+              </div>
+            </ul>
+          </li>
+
+          <li className='relative group'>
+            <span className='font-Ovo cursor-pointer'>Portfolio</span>
+            <ul className='absolute left-0 top-full pt-2 hidden group-hover:block transition-all duration-300 w-48'>
+              <div className='bg-white dark:bg-darkHover shadow-lg rounded-lg py-2 border dark:border-white/10'>
+                <li><a className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-darkTheme font-Ovo' href="#work">My work</a></li>
+                <li><a className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-darkTheme font-Ovo' href="#gallery">Gallery</a></li>
+              </div>
+            </ul>
+          </li>
+
           <li><a className='font-Ovo' href="#contact">Contact me</a></li>
         </ul>
 
