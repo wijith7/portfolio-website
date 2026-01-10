@@ -54,14 +54,14 @@ const About = ({ isDarkMode }) => {
           className='flex-1 text-center sm:text-left'
         >
           <p className='mb-10 max-w-full text-sm sm:text-base leading-relaxed font-Ovo text-justify'>
-          I am a Data Engineer with a strong foundation in Computer Science and a Master's degree in Data Science. 
-          My expertise lies in designing and developing scalable data solutions, optimizing data pipelines, and leveraging 
-          data-driven insights to drive innovation. With experience in both data engineering and software engineering, I enjoy 
-          solving complex problems using efficient algorithms and advanced data processing techniques. My skill set includes data pipeline 
-          development, database management, data visualization, frontend and backend development, and system optimization, making me well-suited 
-          for roles that bridge the gap between software development and data-driven decision-making. I am actively seeking opportunities in 
-          Data Engineering, Software Engineering, and Data Analysis, where I can apply my technical expertise to build robust data systems, 
-          optimize workflows, and extract valuable insights to enhance business performance.
+            I am a Data Engineer with a strong foundation in Computer Science and a Master&apos;s degree in Data Science.
+            My expertise lies in designing and developing scalable data solutions, optimizing data pipelines, and leveraging
+            data-driven insights to drive innovation. With experience in both data engineering and software engineering, I enjoy
+            solving complex problems using efficient algorithms and advanced data processing techniques. My skill set includes data pipeline
+            development, database management, data visualization, frontend and backend development, and system optimization, making me well-suited
+            for roles that bridge the gap between software development and data-driven decision-making. I am actively seeking opportunities in
+            Data Engineering, Software Engineering, and Data Analysis, where I can apply my technical expertise to build robust data systems,
+            optimize workflows, and extract valuable insights to enhance business performance.
           </p>
 
           {/* Information Cards */}

@@ -51,3 +51,4 @@ GPS satellite in space orbiting Earth, satellite technology, GNSS monitoring equ
 
 Once you've added the three new images to the `public/` folder, the code will automatically use them. Refresh your development server to see the changes.
 
+

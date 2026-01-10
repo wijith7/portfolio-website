@@ -41,3 +41,4 @@ articles.forEach((article, index) => {
 
 console.log("After saving all images, the code will be updated to use them!");
 
+

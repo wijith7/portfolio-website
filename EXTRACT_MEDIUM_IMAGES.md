@@ -43,3 +43,4 @@ Based on your articles, here are suggested names:
 
 Once you've saved all the images to the `public/` folder, I can update the code to use them automatically!
 
+

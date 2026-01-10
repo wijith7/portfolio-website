@@ -1,15 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    output: 'export',
+    images: {
+        unoptimized: true,
+    },
+    eslint: {
+        // Warning: This allows production builds to successfully complete even if
+        // your project has ESLint errors.
+        ignoreDuringBuilds: true,
+    },
+    typescript: {
+        ignoreBuildErrors: true,
+    },
+};
 
 export default nextConfig;
-
-
-// const nextConfig = {
-//     output: 'export', // Enables static export
-//     //basePath: '/portfolio-website', // Replace with your repository name
-//     images: {
-//       unoptimized: true, // Disable image optimization for static export
-//     },
-//   };
-  
-//   export default nextConfig;

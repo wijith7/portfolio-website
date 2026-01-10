@@ -43,7 +43,7 @@ const Recommendations = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        Here are some words from colleagues and professionals I've worked with.
+        Here are some words from colleagues and professionals I&apos;ve worked with.
         Their support and feedback have been invaluable in my career journey.
       </motion.p>
 
@@ -54,7 +54,7 @@ const Recommendations = () => {
         transition={{ duration: 0.6, delay: 0.9 }}
         className="my-10 w-screen h-auto"
       >
-        <Swiper 
+        <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={1}
@@ -63,13 +63,13 @@ const Recommendations = () => {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-       
+
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           className="w-full h-full"
         >
 
-        {recoData.map((project, index) => (
+          {recoData.map((project, index) => (
             <SwiperSlide key={index} className="flex justify-center py-5 px-5 h-full w-full">
               <motion.div
                 whileHover={{ scale: 1.05 }}

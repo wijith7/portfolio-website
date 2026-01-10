@@ -31,3 +31,4 @@ Please save the featured images from your Medium articles with these names in th
 
 **Note:** You can use `.png` or `.jpg` - just make sure the extension matches when I update the code.
 
+
