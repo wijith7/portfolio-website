@@ -50,6 +50,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                 <li><a className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-darkTheme font-Ovo' href="#experience">Experience</a></li>
                 <li><a className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-darkTheme font-Ovo' href="#achievements">Achievements</a></li>
                 <li><a className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-darkTheme font-Ovo' href="#certifications">Certifications</a></li>
+                <li><a className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-darkTheme font-Ovo' href="/resume">Resume</a></li>
               </div>
             </ul>
           </li>
