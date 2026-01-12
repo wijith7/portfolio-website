@@ -11,6 +11,13 @@ const Experience = ({ isDarkMode }) => {
       description: 'Working as a Graduate Data Engineer'
     },
     {
+      name: 'Flinders University',
+      logo: '/Flinders_University_Logo.jpg',
+      position: 'Casual Academic',
+      period: 'Past',
+      description: 'Taught Neural Networks and Machine Learning subjects as a Casual Academic'
+    },
+    {
       name: 'WSO2',
       logo: '/wso2-logo.png',
       position: 'Previous Position',
