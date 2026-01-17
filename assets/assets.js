@@ -204,31 +204,43 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.research, title: 'Best Project Award - Finalist', description: 'Recognized among the top 3 finalists for my outstanding research project in Mathematics & Data Science at Flinders University.', 
-        link: 'https://medium.com/@wijithpathiranage/becoming-a-top-3-finalist-in-my-masters-research-project-a-journey-of-growth-and-excellence-06928829deae' },
-    { icon: assets.letter, title: 'Chancellor’s Letter of Commendation', description: 'Chancellor’s Letter of Commendation from Flinders University for outstanding academic performance.', 
-        link: 'https://medium.com/@wijithpathiranage/recognized-for-excellence-vice-chancellors-commendation-for-outstanding-performance-5527ac2d1acb' },
-    { icon: assets.golden, title: 'Golden Key International Honour Society invitation', description: 'Golden Key International Honour Society invitation , representing top 15% student in Flinders University', 
-        link: 'https://medium.com/@wijithpathiranage/657fc840993b' },
-    { icon: assets.revenue, title: 'Winner of Best Revenue Generating App Award', description: 'Recognized by Dialog Axiata in 2021 for creating the top-performing application in a competition driving exceptional revenue growth', 
-        link: 'https://medium.com/@wijithpathiranage/from-vision-to-victory-leading-my-team-to-create-the-best-revenue-generating-app-8de6879686a1' },
+    {
+        icon: assets.research, title: 'Best Project Award - Finalist', description: 'Recognized among the top 3 finalists for my outstanding research project in Mathematics & Data Science at Flinders University.',
+        link: 'https://medium.com/@wijithpathiranage/becoming-a-top-3-finalist-in-my-masters-research-project-a-journey-of-growth-and-excellence-06928829deae'
+    },
+    {
+        icon: assets.letter, title: 'Chancellor’s Letter of Commendation', description: 'Chancellor’s Letter of Commendation from Flinders University for outstanding academic performance.',
+        link: 'https://medium.com/@wijithpathiranage/recognized-for-excellence-vice-chancellors-commendation-for-outstanding-performance-5527ac2d1acb'
+    },
+    {
+        icon: assets.golden, title: 'Golden Key International Honour Society invitation', description: 'Golden Key International Honour Society invitation , representing top 15% student in Flinders University',
+        link: 'https://medium.com/@wijithpathiranage/657fc840993b'
+    },
+    {
+        icon: assets.revenue, title: 'Winner of Best Revenue Generating App Award', description: 'Recognized by Dialog Axiata in 2021 for creating the top-performing application in a competition driving exceptional revenue growth',
+        link: 'https://medium.com/@wijithpathiranage/from-vision-to-victory-leading-my-team-to-create-the-best-revenue-generating-app-8de6879686a1'
+    },
+    {
+        icon: assets.revenue, title: 'Entura Awards - All About Our Customer', description: 'Team nomination for the "All About Our Customer" category at the Entura Awards, recognizing excellence in client service and delivery.',
+        link: '/Entura Awords All about our customer awards nomination for the BHP team.jpeg'
+    },
 ]
 
 export const recoData = [
     {
-      name: "Dr.Mariusz Bajger, Msc, PhD",
-      title: "Lecturer, College of Science and Engineering , Flinders University ",
-      image: "/mariusz_img.png",
-      feedback: "I had a pleasure to supervise Wijith's Master Project in Data Science. Wijith was hard-working and highly committed to his project. He showed a good grasp of difficult research literature, demonstrated solid programming skills, analytical thinking and reasoning, creativity and motivation. Wijith was willing to learn and grow while being self-disciplined and well-organised. I highly recommend Wijith to employers.",
+        name: "Dr.Mariusz Bajger, Msc, PhD",
+        title: "Lecturer, College of Science and Engineering , Flinders University ",
+        image: "/mariusz_img.png",
+        feedback: "I had a pleasure to supervise Wijith's Master Project in Data Science. Wijith was hard-working and highly committed to his project. He showed a good grasp of difficult research literature, demonstrated solid programming skills, analytical thinking and reasoning, creativity and motivation. Wijith was willing to learn and grow while being self-disciplined and well-organised. I highly recommend Wijith to employers.",
     },
     {
-      name: "Sriskandarajah Suhothayan",
-      title: "Senior Software Engineer at Amazon | Author Design Patterns for Cloud Native Applications | Founder open-source stream processing engine Siddhi | Ex-WSO2",
-      image: "/suho.png",
-      feedback: "I had the pleasure of working with Wijith at WSO2, where I served as his supervisor, and I can confidently say he is one of the most motivated and eager-to-learn individuals I have encountered. His contributions were invaluable, particularly in the Docs as Code framework project for Siddhi.io. Wijith took on the challenge of creating a product documentation webpage directly from code annotations, bringing a streamlined and highly maintainable approach to our documentation process. His exceptional work on this project highlighted his innovative thinking, attention to detail, and commitment to excellence. His enthusiasm for learning and growth, combined with his technical skills, make him an asset to any team. I highly recommend him and look forward to seeing his future successes.",
+        name: "Sriskandarajah Suhothayan",
+        title: "Senior Software Engineer at Amazon | Author Design Patterns for Cloud Native Applications | Founder open-source stream processing engine Siddhi | Ex-WSO2",
+        image: "/suho.png",
+        feedback: "I had the pleasure of working with Wijith at WSO2, where I served as his supervisor, and I can confidently say he is one of the most motivated and eager-to-learn individuals I have encountered. His contributions were invaluable, particularly in the Docs as Code framework project for Siddhi.io. Wijith took on the challenge of creating a product documentation webpage directly from code annotations, bringing a streamlined and highly maintainable approach to our documentation process. His exceptional work on this project highlighted his innovative thinking, attention to detail, and commitment to excellence. His enthusiasm for learning and growth, combined with his technical skills, make him an asset to any team. I highly recommend him and look forward to seeing his future successes.",
     },
-    
-  ];
+
+];
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Java, Python, C++, R, Shell, HTML, CSS, JavaScript, React Js, Next Js' },
@@ -291,6 +303,14 @@ export const certificationsData = [
         credentialUrl: '#',
         badgeImage: '/The fundamental of digital Marketing certificate.png',
         description: 'Comprehensive certification covering digital marketing fundamentals including SEO, SEM, social media, and analytics'
+    },
+    {
+        title: 'Australian Computer Society Membership',
+        issuer: 'Australian Computer Society (ACS)',
+        date: '2024',
+        credentialUrl: '#',
+        badgeImage: '/Australian Computer Society Membership Certificate.png',
+        description: 'Professional membership acknowledging qualifications and commitment to ICT professionalism'
     },
     // Awards & Competitions
     {

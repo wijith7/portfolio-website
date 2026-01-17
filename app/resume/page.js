@@ -77,9 +77,11 @@ const Resume = () => {
             }
         ],
         certifications: [
+            "Australian Computer Society Membership (2025)",
             "Google Data Analytics Professional Certificate (2024)",
             "Microsoft Certified: Azure Fundamentals (Expected May 2025)",
-            "Fundamentals of Digital Marketing - Google Digital Garage"
+            "Fundamentals of Digital Marketing - Google Digital Garage",
+            "Entura Awards Nomination: All About Our Customer Category"
         ]
     };
 
