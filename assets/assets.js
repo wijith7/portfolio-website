@@ -307,7 +307,7 @@ export const certificationsData = [
     {
         title: 'Australian Computer Society Membership',
         issuer: 'Australian Computer Society (ACS)',
-        date: '2024',
+        date: '2026',
         credentialUrl: '#',
         badgeImage: '/Australian Computer Society Membership Certificate.png',
         description: 'Professional membership acknowledging qualifications and commitment to ICT professionalism'

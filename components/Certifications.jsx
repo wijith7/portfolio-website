@@ -55,7 +55,7 @@ const Certifications = ({ isDarkMode }) => {
     const scrollContainer = scrollContainerRef.current;
     if (!scrollContainer) return;
 
-    let scrollPosition = 0;
+    let scrollPosition = scrollContainer.scrollLeft;
     let animationFrameId;
 
     const autoScroll = () => {
@@ -82,39 +82,39 @@ const Certifications = ({ isDarkMode }) => {
 
   return (
     <motion.div
-      initial={{opacity: 0}}
-      whileInView={{opacity: 1}}
-      transition={{duration: 1}}
-      
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+
       id="certifications" className='w-full px-[12%] py-10 scroll-mt-20'>
 
       <motion.h4
-        initial={{y: -20, opacity: 0}}
-        whileInView={{y: 0, opacity: 1}}
-        transition={{duration: 0.5, delay: 0.3}}
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
         className='text-center mb-2 text-lg font-Ovo'>Professional Credentials</motion.h4>
 
       <motion.h2
-        initial={{y: -20, opacity: 0}}
-        whileInView={{y: 0, opacity: 1}}
-        transition={{duration: 0.5, delay: 0.5}}
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         className='text-center text-5xl font-Ovo'>Certifications</motion.h2>
 
       <motion.p
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{duration: 0.5, delay: 0.7}}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
         className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'
       >
-        Continuous learning and professional development are essential to my career growth. 
-        These certifications validate my expertise and commitment to staying current with industry 
+        Continuous learning and professional development are essential to my career growth.
+        These certifications validate my expertise and commitment to staying current with industry
         best practices and emerging technologies.
       </motion.p>
 
       <motion.div
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{duration: 0.6, delay: 0.9}}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.9 }}
         className='relative my-10'
       >
         {/* Left Arrow Button */}
@@ -123,10 +123,10 @@ const Certifications = ({ isDarkMode }) => {
           className='absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-darkTheme border border-gray-400 dark:border-white rounded-full p-3 shadow-lg hover:bg-lightHover dark:hover:bg-darkHover transition-colors duration-300 -translate-x-4 md:-translate-x-8'
           aria-label='Scroll left'
         >
-          <svg 
-            className='w-6 h-6 text-gray-800 dark:text-white' 
-            fill='none' 
-            stroke='currentColor' 
+          <svg
+            className='w-6 h-6 text-gray-800 dark:text-white'
+            fill='none'
+            stroke='currentColor'
             viewBox='0 0 24 24'
           >
             <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M15 19l-7-7 7-7' />
@@ -139,10 +139,10 @@ const Certifications = ({ isDarkMode }) => {
           className='absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-darkTheme border border-gray-400 dark:border-white rounded-full p-3 shadow-lg hover:bg-lightHover dark:hover:bg-darkHover transition-colors duration-300 translate-x-4 md:translate-x-8'
           aria-label='Scroll right'
         >
-          <svg 
-            className='w-6 h-6 text-gray-800 dark:text-white' 
-            fill='none' 
-            stroke='currentColor' 
+          <svg
+            className='w-6 h-6 text-gray-800 dark:text-white'
+            fill='none'
+            stroke='currentColor'
             viewBox='0 0 24 24'
           >
             <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M9 5l7 7-7 7' />
@@ -165,49 +165,49 @@ const Certifications = ({ isDarkMode }) => {
           ) : (
             /* Duplicate items for seamless infinite scroll */
             [...certificationsData, ...certificationsData].map((cert, index) => (
-            <motion.div
-              whileHover={{scale: 1.05, y: -4}}
-              transition={{duration: 0.3}}
-              key={`${index}-${cert.title}`}
-              className='flex-shrink-0 w-80 border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover 
+              <motion.div
+                whileHover={{ scale: 1.05, y: -4 }}
+                transition={{ duration: 0.3 }}
+                key={`${index}-${cert.title}`}
+                className='flex-shrink-0 w-80 border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover 
               hover:shadow-lg duration-500 dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 
               flex flex-col items-center text-center group'
-              onClick={() => openModal(cert)}
-            >
-              {/* Certificate Image */}
-              <div className='w-full h-48 mb-4 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 flex items-center justify-center'>
-                {cert.badgeImage ? (
-                  <img 
-                    src={cert.badgeImage} 
-                    alt={cert.title}
-                    className='w-full h-full object-contain group-hover:scale-105 transition-transform duration-300'
-                  />
-                ) : (
-                  <div className='w-full h-full flex items-center justify-center text-4xl'>
-                    🏆
-                  </div>
-                )}
-              </div>
+                onClick={() => openModal(cert)}
+              >
+                {/* Certificate Image */}
+                <div className='w-full h-48 mb-4 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 flex items-center justify-center'>
+                  {cert.badgeImage ? (
+                    <img
+                      src={cert.badgeImage}
+                      alt={cert.title}
+                      className='w-full h-full object-contain group-hover:scale-105 transition-transform duration-300'
+                    />
+                  ) : (
+                    <div className='w-full h-full flex items-center justify-center text-4xl'>
+                      🏆
+                    </div>
+                  )}
+                </div>
 
-              {/* Certification Details */}
-              <h3 className='text-lg font-semibold text-gray-800 dark:text-white mb-2 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-colors line-clamp-2'>
-                {cert.title}
-              </h3>
-              
-              <p className='text-sm text-gray-600 dark:text-gray-300 mb-3'>
-                {cert.issuer}
-              </p>
+                {/* Certification Details */}
+                <h3 className='text-lg font-semibold text-gray-800 dark:text-white mb-2 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-colors line-clamp-2'>
+                  {cert.title}
+                </h3>
 
-              <p className='text-xs text-gray-500 dark:text-gray-400 mb-4 flex-1 line-clamp-3'>
-                {cert.description}
-              </p>
+                <p className='text-sm text-gray-600 dark:text-gray-300 mb-3'>
+                  {cert.issuer}
+                </p>
 
-              <div className='flex items-center justify-center w-full mt-auto pt-4 border-t border-gray-200 dark:border-gray-700'>
-                <span className='text-xs text-gray-500 dark:text-gray-400'>
-                  Issued: {cert.date}
-                </span>
-              </div>
-            </motion.div>
+                <p className='text-xs text-gray-500 dark:text-gray-400 mb-4 flex-1 line-clamp-3'>
+                  {cert.description}
+                </p>
+
+                <div className='flex items-center justify-center w-full mt-auto pt-4 border-t border-gray-200 dark:border-gray-700'>
+                  <span className='text-xs text-gray-500 dark:text-gray-400'>
+                    Issued: {cert.date}
+                  </span>
+                </div>
+              </motion.div>
             ))
           )}
         </div>
