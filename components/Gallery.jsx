@@ -13,8 +13,8 @@ const galleryData = {
         { src: '/Image gallery/white water rafting.jpg', title: 'White Water Rafting', description: 'Adrenaline rush' },
     ],
     Travel: [
-        { src: '/Image gallery/Pidurangala facing sigiriya.jpg', title: 'Pidurangala Rock', description: 'Breathtaking views' },
         { src: '/Image gallery/Travell around Delf Island.jpg', title: 'Delft Island Adventure', description: 'Exploring new places' },
+        { src: '/Image gallery/Pidurangala facing sigiriya.jpg', title: 'Pidurangala Rock', description: 'Breathtaking views' },
         { src: '/Image gallery/Waterfall hunting.jpg', title: 'Waterfall Hunting', description: 'Chasing waterfalls' },
         { src: '/Image gallery/Worlds end cliff.jpg', title: 'World\'s End Cliff', description: 'On top of the world' },
         { src: '/Image gallery/malysia tour.jpg', title: 'Malaysia Tour', description: 'Cultural exploration' },
