@@ -1,5 +1,6 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import ChatWidget from '@/components/Chat/ChatWidget';
 
 const outfit = Outfit({
   subsets: ["latin"], weight: ["400", "500", "600", "700"]
@@ -61,6 +62,7 @@ export default function RootLayout({ children }) {
         antialiased leading-8 overflow-x-hidden dark:bg-darkTheme
         dark:text-white`}
       >
+        <ChatWidget />
         {children}
       </body>
     </html>
