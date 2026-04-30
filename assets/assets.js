@@ -101,6 +101,16 @@ export const assets = {
 export const workData = [
     // Latest Industry Articles
     {
+        title: "From Dashboards to Dirt",
+        description: "What a field experience taught me as a Data Engineer",
+        bgImage: '/from-dashboards-to-dirt.png',
+        link: 'https://medium.com/@wijithpathiranage/from-dashboards-to-dirt-what-a-field-experience-taught-me-as-a-data-engineer-1b3d629635a5?postPublishedType=repub',
+        readTime: '4 min',
+        category: 'Industry Experience',
+        tags: ['Data Engineering', 'Field Experience', 'Mining', 'Telemetry'],
+        date: '2026-04-29'
+    },
+    {
         title: "You Can't See the Danger Inside a Tailings Dam — Engineers Use This to Find It",
         description: "How engineers detect hidden dangers in tailings dams",
         bgImage: '/You Can not see.png',
